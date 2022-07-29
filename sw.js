@@ -11,7 +11,7 @@ self.addEventListener('push', function(e) {
             {
                 action: 'explore', title: 'Explore this new world',
                 icon: 'images/checkmark.png'
-            }
+            },
             {
                 action:'close', title: 'Close',
                 icon: 'images/xmark.png',
@@ -19,7 +19,7 @@ self.addEventListener('push', function(e) {
         ]
     };
      e.waitUntil(
-        self.registration.showNotification('Hello word', options);
+        self.registration.showNotification('Hello word', options)
      );
     
 });
