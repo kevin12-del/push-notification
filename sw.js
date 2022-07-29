@@ -1,6 +1,9 @@
+var msg = "test notification push";
+var titles = "Megasoft";
+
 self.addEventListener('push', function(e) {
     var options = {
-        body: 'Tis notification was generated from a push!',
+        body: msg,
         icon: 'images/example.png',
         vibrate: [100, 50, 100],
         data: {
@@ -19,7 +22,7 @@ self.addEventListener('push', function(e) {
         ]
     };
      e.waitUntil(
-        self.registration.showNotification('Hello word', options)
+        self.registration.showNotification(titles, options)
      );
     
 });
