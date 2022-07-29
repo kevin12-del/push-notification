@@ -13,7 +13,7 @@
         <script>
             addEventListener('load', async () =>{
                 let sw = await navigator.serviceWorker.register('./sw.js')
-                console.log(sw)
+                console.log(JSON.stringify(sw))
             })
 
             async function subscribe() {
